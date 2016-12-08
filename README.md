@@ -1,1 +1,1 @@
-This is a course project for AngularJS course
+This is a course project for AngularJS course.
