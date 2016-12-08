@@ -1,0 +1,66 @@
+.main-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: $side-panel-width;
+  width: calc(100% - #{$side-panel-width});
+  min-height: 100vh;
+  padding: 25px 5px 10px 35px;
+  background-image: linear-gradient(150deg, #{$color-main}, #1a2d3b);
+  overflow-y: scroll;
+
+  &__wrapper { max-width: $main-content-width; }
+}
+
+.is-truncated { @extend %ellipsis; }
+
+.mail-table,
+.letter-table {
+  @extend %fluid-table;
+}
+
+.mail-table {
+  margin: 1.15em 0 2em;
+  table-layout: fixed;
+
+  &__row { border-bottom: 1px solid $color-blue; }
+
+  &__row:hover {
+    background-color: $color-main--dark;
+    color: lighten($text-base, 10%);
+    cursor: pointer;
+  }
+
+  &__subject,
+  &__body { padding: 10px; }
+
+  &__subject {
+    width: 25%;
+    font-weight: 700;
+  }
+
+  &__body { width: 75%; }
+}
+
+.letter-table {
+  margin: 1.3em 0;
+
+  &__body {
+    padding: 1em 0;
+  }
+}
+
+.clock {
+  float: right;
+
+  i {
+    font-style: normal;
+    animation: tick-tock 1.2s ease-in-out infinite;
+  }
+}
+
+@keyframes tick-tock {
+  0%, 100% { opacity: 1; }
+
+  50% { opacity: 0; }
+}

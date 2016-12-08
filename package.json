@@ -1,12 +1,12 @@
 {
   "name": "mailbox",
-  "version": "0.0.1",
-  "description": "Training course project powered by AngularJS 1.5",
-  "author": "Max Maslenko",
+  "version": "0.0.3",
+  "description": "AngularJS 1.5",
+  "author": "mr.kyzb",
   "license": "ISC",
   "private": true,
   "readme": "README.md",
-  "repository": "https://github.com/biggus-dickus/mailbox.git",
+  "repository": "https://github.com/mr.kyzb/mailbox.git",
   "dependencies": {
     "browser-sync": "^2.9.6",
     "gulp": "^3.9.1",
